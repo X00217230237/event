@@ -1,38 +1,35 @@
-public class Attendee{
+public class Attendees {
     private String name;
-    private char gender;
     private String email;
-    private int age;
+    private String address;
 
-    public Attendee(String name,char gender,String email,int age){
-         this.name=name;
-         this.gender=gender;
-         this.email=email;
-         this.age=age;
-    }
-
-    public void setName(String name){
-        this.name=name;
-    }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void setGender(char gender){
-        this.gender=gender;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public char getGender(){
-        return gender;
-    }
-    public void setemail(String email){
-        this.email=email;
-    }
-    public String getEmail(){
+
+    public String getEmail() {
         return email;
     }
-    public void setAge(int age ){
-        this.age=age;
+
+    public void setEmail(String email) {
+        this.email = email;
     }
-    public int getage(){
-        return age;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Attendees(String name, String email, String address) {
+        this.name = name;
+        this.email = email;
+        this.address = address;
     }
 }
